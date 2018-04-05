@@ -8,7 +8,7 @@ tags: []
 ---
 
 ## 安装所需的包
-```
+```r
 install.packages('blogdown')
 devtools::install_github("rstudio/blogdown")
 
@@ -38,3 +38,15 @@ blogdown::new_site(theme = "gcushen/hugo-academic", theme_example = TRUE)
 ## 写博客
 ADDins > new post
 
+## 修改主题
+可以在网站 https://themes.gohugo.io/ 选择
+
+## netlify设置
+netlify(https://app.netlify.com/signup) 使用github授权登录。
+创建Sites,点GitHub
+Buildcommand 填写 hugo
+publish directory 填写 public
+点Deploy site
+
+参考教程
+- https://mp.weixin.qq.com/s/bULo3iv__f-64B_IMsPsnw

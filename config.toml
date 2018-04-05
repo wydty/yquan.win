@@ -1,4 +1,4 @@
-baseurl = "https://yquanblog.netlify.com//"
+baseurl = "https://yquan.netlify.com//"
 
 languageCode = "en-us"
 title = "yquanBlog"
@@ -10,6 +10,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
 [[menu.main]]
     name = "About"
     url = "/about/"
