@@ -1,6 +1,6 @@
-baseurl = "https://yquan.netlify.com//"
+baseurl = "https://yquan.win//"
 
-languageCode = "en-us"
+languageCode = "zh-CN"
 title = "yquanBlog"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
@@ -10,22 +10,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
-
 [[menu.main]]
     name = "Home"
     url = "/"
+    weight = 1
+    
 [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 2
+    
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/wydty"
+    weight = 3
+    
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com"
+    name = "简书"
+    url = "https://www.jianshu.com/u/0aa3fd3e8e5b"
+    weight = 4
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "quanquan的博客及笔记"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
