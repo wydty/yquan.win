@@ -1,8 +1,15 @@
 ---
-title: "About"
+title: "About quanquan"
 date: "2016-05-05T21:48:51-07:00"
 ---
 
-quanquanBlog
-www.qplot.cn:3838
+当初选择这个域名是因为便宜， 
+十年才百来块钱。
+
+网站：
+[居于shiny的快速画图](www.qplot.cn:3838)  
+[我的博客](www.yquan.win)  
+[https://github.com/wydty](https://github.com/wydty)
+
+
 
