@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on yquanBlog</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on yquanBlog</description>
+    <title>Posts on A Hugo website</title>
+    <link>/yquan.win/post/</link>
+    <description>Recent content in Posts on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/yquan.win/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>blogdown Hugo Rstudio搭建博客教程</title>
-      <link>/2018/04/05/blogdown-hugo-rstudio/</link>
-      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      <title>A Plain Markdown Post</title>
+      <link>/yquan.win/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
       
-      <guid>/2018/04/05/blogdown-hugo-rstudio/</guid>
-      <description>安装所需的包 install.packages(&#39;blogdown&#39;) devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;) install.packages(&#39;later&#39;) install.packages(&#39;miniUI&#39;) install.packages(&amp;quot;xaringan&amp;quot;) blogdown::install_hugo() ## 手动安装 blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  初始化站点 library(blogdown) blogdown::new_site() ## 其它样式 blogdown::new_site(theme = &amp;quot;gcushen/hugo-academic&amp;quot;, theme_example = TRUE) # github创建好的仓库 # git clone https://github.com/wydty/yquan.win.git  写博客 ADDins &amp;gt; new post
-修改主题 可以在网站 https://themes.gohugo.io/ 选择
-netlify设置 netlify(https://app.netlify.com/signup) 使用github授权登录。 创建Sites,点GitHub Buildcommand 填写 hugo publish directory 填写 public 点Deploy site
-参考教程 - https://mp.weixin.qq.com/s/bULo3iv__f-64B_IMsPsnw</description>
+      <guid>/yquan.win/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     
     <item>
-      <title>第一篇Rstudio写的博客</title>
-      <link>/2018/04/05/%E7%AC%AC%E4%B8%80%E7%AF%87rstudio%E5%86%99%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Hello R Markdown</title>
+      <link>/yquan.win/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/2018/04/05/%E7%AC%AC%E4%B8%80%E7%AF%87rstudio%E5%86%99%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>以后就用rstudio 写博客了</description>
+      <guid>/yquan.win/2015/07/23/hello-r-markdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>/yquan.win/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/yquan.win/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
   </channel>
