@@ -15,7 +15,7 @@ quanquan，生信分析。
 微博(https://weibo.com/2185267045)  
 
 ### 项目：
-居于shiny的快速画图 (https://www.qplot.cn:3838)   
+居于shiny的快速画图 (www.qplot.cn:3838)   
 
 
 Email:quan575@qq.com   

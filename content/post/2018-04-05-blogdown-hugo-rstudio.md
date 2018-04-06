@@ -65,6 +65,7 @@ blogdown::install_theme("coderzh/hugo-pacman-theme", theme_example = TRUE, updat
 ## 写博客
 Rstudio 菜单栏下的 ADDins > new post
 出来菜单框，填写相关信息，然后用md 写文章吧。
+你的md文件会在content/post文件夹。
 点击Rstudio右侧的Git > commit > push.
 
 
