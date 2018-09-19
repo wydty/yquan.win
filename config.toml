@@ -1,5 +1,5 @@
 baseurl = "https://yquan.win/"
-title = "YquanBlog"
+title = "Yquan"
 theme = "portfolio"
 languageCode = "zh-CN"
 
@@ -43,11 +43,14 @@ googleAnalytics = ""
   url = "about/"
 
   [[params.navlinks]]
+  name = "Blog"
+  url = "post/"
+
+  [[params.navlinks]]
   name = "Get in touch"
   url = "contact/"
 
   [params.social]
-  
   email         = "quan575@qq.com"
   github        = "https://github.com/wydty"
   jianshu       = "https://www.jianshu.com/u/0aa3fd3e8e5b" 

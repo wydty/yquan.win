@@ -411,7 +411,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .content-column-content p,
 .content-column-content li {
-  color: #999999;
+  color: #3a3737;
 }
 .content-column-content ul li {
   list-style-type: none;
@@ -1958,30 +1958,30 @@ h6,
 }
 h1,
 .h1 {
-  font-size: 48px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 38px;
+  font-size: 20px;
 }
 h3,
 .h3 {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 700;
 }
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 700;
 }
 h5,
 .h5 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
 }
 h6,
 .h6 {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 700;
 }
 h1,

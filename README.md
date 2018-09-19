@@ -1,5 +1,15 @@
 # yquan.win
-wydtyBlog
 
+www.yquan.win  
+www.qplot.cn  
 
-www.qplot.cn:3838
+记录笔记。
+采用hugo驱动  
+portfolio模板  
+github托管
+netlify部署
+
+hugo new site yquan.win
+cd themes
+git clone https://github.com/kishaningithub/hugo-creative-portfolio-theme.git portfolio
+rm -rf portfolio/.git

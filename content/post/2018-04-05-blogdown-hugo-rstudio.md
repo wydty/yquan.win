@@ -1,11 +1,13 @@
----
-title: blogdown Hugo netlify Rstudio搭建博客笔记
-author: quanquan
-date: '2018-04-05'
-slug: blogdown-hugo-rstudio
-categories: []
-tags: [hugo install]
----
++++
+title= 'blogdown Hugo netlify Rstudio搭建博客笔记'
+author= 'quanquan'
+date= '2018-04-05'
+slug= 'blogdown-hugo-rstudio'
++++
+
+搭建本博客的教程
+hugo驱动，模板hugo-portfolio.
+<!--more-->
 
 ## 安装所需的包
 ```r
