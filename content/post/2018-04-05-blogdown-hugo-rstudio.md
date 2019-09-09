@@ -1,9 +1,13 @@
-+++
-title= 'blogdown Hugo netlify Rstudio搭建博客笔记'
-author= 'quanquan'
-date= '2018-04-05'
-slug= 'blogdown-hugo-rstudio'
-+++
+---
+title: 'blogdown Hugo netlify Rstudio搭建博客笔记'
+author: 'quan'
+date: '2018-04-05'
+slug: 'blogdown-hugo-rstudio'
+catgories:
+  - web
+tags:
+  - hugo
+---
 
 搭建本博客的教程
 hugo驱动，模板hugo-portfolio.

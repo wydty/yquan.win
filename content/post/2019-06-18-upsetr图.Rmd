@@ -1,0 +1,19 @@
+---
+title: UpSetR图
+author: quan
+date: '2019-06-18'
+slug: upsetr
+categories: [R, upset]
+tags: [R]
+---
+
+[upset Github](https://github.com/hms-dbmi/UpSetR)
+
+```{r}
+# install.packages("UpSetR")
+require(UpSetR)
+movies <- read.csv( system.file("extdata", "movies.csv", package = "UpSetR"), header=T, sep=";" )
+mutations <- read.csv( system.file("extdata", "mutations.csv", package = "UpSetR"), header=T, sep = ",")
+
+head(movies)
+```

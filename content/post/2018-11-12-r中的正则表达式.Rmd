@@ -1,0 +1,77 @@
+---
+title: R中的正则表达式
+author: quan
+date: '2018-11-12'
+slug: R-regex
+categories:
+  - R
+tags:
+  - R
+---
+
+R中正则的表示
+```
+[[:digit:]] or \\d  Digits; [0-9]  #数字
+\\D  Non-digits; [^0-9]    #非数字
+[[:lower:]] Lower-case letters; [a-z] #小写字母
+[[:upper:]] Upper-case letters; [A-Z] #大写字母
+[[:alpha:]] Alphabetic characters; [A-z] #所有字母
+[[:alnum:]] Alphanumeric characters [A-z0-9] #字母和数字
+\\w  Word characters; [A-z0-9_] #字母和数字 下划线
+\\W  Non-word characters   #非world
+[[:xdigit:]] or \\x Hexadec. digits; [0-9A-Fa-f] #十六进制
+[[:blank:]]  Space and tab   #空格制表符
+[[:space:]] or \\s  #Space, tab, vertical tab, newline, form feed, carriage return
+\\S  Not space; [^[:space:]]  #非空格
+[[:punct:]] Punctuation characters; !"#$%&’()*+,-./:;<=>?@[]^_`{|}~  #标点符号
+[[:graph:]] Graphical characters; [[:alnum:][:punct:]]
+[[:print:]] Printable characters; [[:alnum:][:punct:]\\s]  
+[[:cntrl:]] or \\c Control characters; \n, \r etc.  #换行符
+```
+常规的这则表示方法
+```
+## 分组 ##
+.  Any character except \n 任何字符除了\n
+|  Or, e.g. (a|b) a或b
+[…]  List permitted characters, e.g. [abc] abc中任何
+[a-z]  Specify character ranges  a-z所有
+[^…]  List excluded characters  #非这些字符
+(…)   Grouping, enables back referencing using \\N where N is an integer  #分组
+
+## Anchors ##
+^   Start of the string  #开头
+$   End of the string  #结束
+\\b Empty string at either edge of a word  #字符分边缘
+\\B NOT the edge of a word  #不是一个字符的边缘
+\\< Beginning of a word  #单词开头
+\\> End of a word #单词结尾
+
+## 数量 ##
+*  Matches at least 0 times #匹配最少0次
++  Matches at least 1 time  #最少一次
+?  Matches at most 1 time; optional string #最多一次
+{n}  Matches exactly n times #匹配N次
+{n,} Matches at least n times  #最少N次
+{n,m} Matches between n and m times  #N到M次
+```
+
+
+```{r}
+string <- c("Hiphopopotamus", "Rhymenoceros", 
+            "time for bottomless lyrics")
+pattern <- "t.m"
+
+grep(pattern, string)
+grep(pattern, string, value = TRUE)
+grepl(pattern, string)
+stringr::str_detect(string, pattern)
+```
+
+```{r }
+regexpr(pattern, string)
+gregexpr(pattern, string)
+stringr::str_locate(string, pattern)
+stringr::str_locate_all(string, pattern)
+```
+
+

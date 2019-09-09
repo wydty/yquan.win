@@ -1,0 +1,40 @@
+---
+title: UpSetR图
+author: quan
+date: '2019-06-18'
+slug: upsetr
+categories: [R, upset]
+tags: [R]
+---
+
+
+
+<p><a href="https://github.com/hms-dbmi/UpSetR">upset Github</a></p>
+<pre class="r"><code># install.packages(&quot;UpSetR&quot;)
+require(UpSetR)</code></pre>
+<pre><code>## Loading required package: UpSetR</code></pre>
+<pre class="r"><code>movies &lt;- read.csv( system.file(&quot;extdata&quot;, &quot;movies.csv&quot;, package = &quot;UpSetR&quot;), header=T, sep=&quot;;&quot; )
+mutations &lt;- read.csv( system.file(&quot;extdata&quot;, &quot;mutations.csv&quot;, package = &quot;UpSetR&quot;), header=T, sep = &quot;,&quot;)
+
+head(movies)</code></pre>
+<pre><code>##                                 Name ReleaseDate Action Adventure Children
+## 1                   Toy Story (1995)        1995      0         0        1
+## 2                     Jumanji (1995)        1995      0         1        1
+## 3            Grumpier Old Men (1995)        1995      0         0        0
+## 4           Waiting to Exhale (1995)        1995      0         0        0
+## 5 Father of the Bride Part II (1995)        1995      0         0        0
+## 6                        Heat (1995)        1995      1         0        0
+##   Comedy Crime Documentary Drama Fantasy Noir Horror Musical Mystery
+## 1      1     0           0     0       0    0      0       0       0
+## 2      0     0           0     0       1    0      0       0       0
+## 3      1     0           0     0       0    0      0       0       0
+## 4      1     0           0     1       0    0      0       0       0
+## 5      1     0           0     0       0    0      0       0       0
+## 6      0     1           0     0       0    0      0       0       0
+##   Romance SciFi Thriller War Western AvgRating Watches
+## 1       0     0        0   0       0      4.15    2077
+## 2       0     0        0   0       0      3.20     701
+## 3       1     0        0   0       0      3.02     478
+## 4       0     0        0   0       0      2.73     170
+## 5       0     0        0   0       0      3.01     296
+## 6       0     0        1   0       0      3.88     940</code></pre>
