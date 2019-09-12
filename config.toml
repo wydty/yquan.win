@@ -25,7 +25,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 url = "favicon.jpg" 
 
 [permalinks]
-    post = "/:year/:month:day:slug/"
+    post = "/:year/:month/:day:slug/"
 
 [[menu.main]]
     weight = 3
