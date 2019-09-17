@@ -38,3 +38,16 @@ head(movies)</code></pre>
 ## 4       0     0        0   0       0      2.73     170
 ## 5       0     0        0   0       0      3.01     296
 ## 6       0     0        1   0       0      3.88     940</code></pre>
+<p>UpSet图的视图，其中包含基于交叉点中元素的附加图。</p>
+<pre class="r"><code>upset(movies,attribute.plots=list(gridrows=60,
+     plots=list(
+        list(plot=scatter_plot, x=&quot;ReleaseDate&quot;, y=&quot;AvgRating&quot;),
+        list(plot=scatter_plot, x=&quot;ReleaseDate&quot;, y=&quot;Watches&quot;),
+        list(plot=scatter_plot, x=&quot;Watches&quot;, y=&quot;AvgRating&quot;),
+        list(plot=histogram, x=&quot;ReleaseDate&quot;)), ncols = 2)
+     )</code></pre>
+<p><img src="/post/2019-06-18-upsetr%E5%9B%BE_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>upset(mutations, sets = c(&quot;PTEN&quot;, &quot;TP53&quot;, &quot;EGFR&quot;, &quot;PIK3R1&quot;, &quot;RB1&quot;),
+      sets.bar.color = &quot;#56B4E9&quot;,
+      order.by = &quot;freq&quot;, empty.intersections = &quot;on&quot;)</code></pre>
+<p><img src="/post/2019-06-18-upsetr%E5%9B%BE_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>

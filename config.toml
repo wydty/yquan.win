@@ -1,5 +1,5 @@
 title = "Yquan Blogs"
-baseURL = "http://www.yquan.win/"
+baseURL = "http://www.yquan.win//"
 languageCode = "zh-CN"
 theme = "bootie-docs"
 

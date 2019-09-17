@@ -4,10 +4,11 @@ www.yquan.win
 www.qplot.cn  
 
 记录笔记。  
-采用hugo驱动   
-portfolio模板   
-github托管  
-netlify部署  
+- [采用hugo驱动](https://gohugo.io)  
+- [portfolio模板]()  
+- [github托管](https://github.com/wydty/yquan.win)   
+- [netlify部署](https://app.netlify.com/sites/yquan)  
+
 
 ```
 hugo new site yquan.win
